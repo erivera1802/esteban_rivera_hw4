@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+float *ImportData(char filename [100],int fil,int col);
+int main()
+{
+  float *S;
+  S=ImportData("Theta_Phi.dat",1000,2);
+  
+}
+float *ImportData(char filename [100],int fil,int col)
+{
+  FILE *in;
+  int i;
+  int j=0;
+  float var1,var2;
+  int test;
+  float *A;
+  A=malloc(sizeof(float)*col*fil);
+
+  in = fopen(filename, "r");
+  if(!in)
+    {
+      printf("problems opening the file %s\n", filename);
+      exit(1);
+      
+    }
+  //  printf("Now I am reading\n");
+
+  do
+    {
+      test = fscanf(in, "%f %f\n", &var1,&var2);
+      if(test!=EOF)
+	{
+	  //printf("%f %f\n", var1,var2);
+	  //printf("%d \n",j);
+	  A[j]=var1;
+	  A[j+1]=var2;
+	  j=j+2;
+	}
+    }
+  while(test!=EOF);
+  fclose(in);
+  return A;
+}

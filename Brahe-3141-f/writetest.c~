@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+int main(void){
+FILE *in;
+int i;
+char name[256];
+int n_days;
+char filename[100]="test.dat";
+char months[12][256];
+
+/*opens the file, writes, closes the file*/
+in = fopen(filename,"w");
+if(!in){
+printf("problem opening the file %s\n", filename);
+exit(1);
+}
+for(i=0;i<12;i++){
+fprintf(in, "%s %d\n", months[i], days[i]);
+}
+fclose(in);
+}
