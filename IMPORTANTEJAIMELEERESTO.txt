@@ -1,0 +1,6 @@
+Buenas tardes Jaime,
+En este repositorio se encuentra la tarea 4 entregada a la hora que era necesario. Sin embargo, no esta completa. Falta corregir las dos regresiones. Sin embargo, en otro repositorio, se encuentra la tarea 4, unas horas tarde, pero completa y mucho mas ordenada. Espero sea posible que se me revise ese archivo asi sea sobre menos nota, porque seguro me iria mejor que en este.
+Sin embargo, aclaro que en ambos archivos, es necesario que se corra tanto el notebook de python como los c(los corre solo el notebook) en la misma carpeta donde se encuentran los experimentos
+
+El link del repositorio con la tarea completa es:
+https://github.com/erivera1802/esteban_rivera_hw44
